@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8a0ca01102028f58c754f31bdea28f4a",
+    "revision": "07a1bdf71c8bfddf938a33d02abf28a4",
     "url": "/task-game/index.html"
   },
   {
-    "revision": "3e76ff7070ec4010a585",
-    "url": "/task-game/static/css/main.984629ac.chunk.css"
+    "revision": "52a9c5fb8a420548e928",
+    "url": "/task-game/static/css/main.9c6863c1.chunk.css"
   },
   {
     "revision": "c81b63aae6bcc0681ada",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/task-game/static/js/2.af61028b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e76ff7070ec4010a585",
-    "url": "/task-game/static/js/main.26457b19.chunk.js"
+    "revision": "52a9c5fb8a420548e928",
+    "url": "/task-game/static/js/main.ea9e6701.chunk.js"
   },
   {
     "revision": "d0f4e28b2ea21cb5a8b3",
