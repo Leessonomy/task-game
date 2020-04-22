@@ -1,0 +1,7 @@
+const actions = {
+  GET_CELLS_COLORS: "GET_CELLS_COLORS",
+  STATUS_CELLS_COLORS: "STATUS_CELLS_COLORS",
+  RESET_CELLS: "RESET_CELLS",
+};
+
+export default actions;

@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #7e6666;
+}
+
+.board-content {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  -ms-grid-columns: 1fr 4px 1fr 4px 1fr 4px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4px;
+}
+
+.color-cell {
+  color: black;
+  font-weight: 700;
+  height: 160px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.checkbox {
+  display: none;
+}
+
+.card-cell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+}
+
+.card-cell,
+.color-cell {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card-cell-front,
+.card-cell-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-cell-front {
+  color: white;
+  background-color: #271f1f;
+}
+
+.card-cell-back {
+  color: white;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card-cell-front,
+.card-cell-back {
+  border: 1px solid #eab4b4;
+}
+
+.card-cell-front-text,
+.card-cell-back-text {
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.description {
+  width: 100%;
+  color: #ffe9e9;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
