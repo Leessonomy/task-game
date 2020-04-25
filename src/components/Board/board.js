@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "../../index.css";
 import Cell from "../Cell/cell";
-import { connect } from "react-redux";
-import {
-  initializeNewCells,
-  setSpinStatus,
-  resetCells,
-} from "../../store/actions/actions-creators";
+import actionCreators from "../../store/actions/action-creators";
+import { useSelector, useDispatch } from "react-redux";
 
-const Board = ({ cells, initializeNewCells, setSpinStatus, resetCells }) => {
+const Board = () => {
   const [sort, setSort] = useState([]);
+  const cells = useSelector((state) => state.game.cellsColors);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    initializeNewCells();
-  }, []);
+    dispatch(actionCreators.initializeNewCells());
+  }, []); // eslint-disable-line
 
   useEffect(() => {
     const gameOver = cells.every((elem) => elem.spin === true);
@@ -28,18 +26,18 @@ const Board = ({ cells, initializeNewCells, setSpinStatus, resetCells }) => {
       if (!match) {
         setSort([]);
         setTimeout(() => {
-          resetCells();
+          dispatch(actionCreators.resetCells());
         }, 400);
       } else {
         setSort([]);
       }
     }
-  }, [sort]);
+  }, [sort]); // eslint-disable-line
 
   const handleChange = (id, e) => {
     if (e.target.checked) {
       setSort([...sort, e.target.value]);
-      setSpinStatus(id);
+      dispatch(actionCreators.setSpinStatus(id));
     }
   };
 
@@ -64,15 +62,4 @@ const Board = ({ cells, initializeNewCells, setSpinStatus, resetCells }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  cells: state.game.cellsColors,
-  initializeNewCells: initializeNewCells(),
-  setSpinStatus: setSpinStatus(state),
-  resetCells: resetCells(),
-});
-
-export default connect(mapStateToProps, {
-  initializeNewCells: initializeNewCells,
-  setSpinStatus: setSpinStatus,
-  resetCells: resetCells,
-})(Board);
+export default Board;

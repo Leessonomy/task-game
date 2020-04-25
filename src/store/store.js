@@ -5,7 +5,6 @@ const reducer = combineReducers({
   game: defaultReducer,
 });
 
-
 const store = createStore(reducer);
 
 export default store;

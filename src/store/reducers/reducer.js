@@ -25,9 +25,8 @@ const defaultReducer = (state = initialState, action) => {
         cellsColors: randomCells(state.cellsColors),
       };
     case actions.STATUS_CELLS_COLORS:
-      const newArr = state.cellsColors.map((n, i) => {
-        return i === action.id ? { ...n, spin: !n.spin } : n;
-      });
+      let newArr = [...state.cellsColors];
+      newArr[action.id] = { ...newArr[action.id], spin: true };
       return {
         ...state,
         cellsColors: newArr,
