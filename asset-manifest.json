@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/task-game/static/css/main.9c6863c1.chunk.css",
-    "main.js": "/task-game/static/js/main.ea9e6701.chunk.js",
-    "main.js.map": "/task-game/static/js/main.ea9e6701.chunk.js.map",
+    "main.js": "/task-game/static/js/main.5ac85767.chunk.js",
+    "main.js.map": "/task-game/static/js/main.5ac85767.chunk.js.map",
     "runtime-main.js": "/task-game/static/js/runtime-main.47697e28.js",
     "runtime-main.js.map": "/task-game/static/js/runtime-main.47697e28.js.map",
-    "static/js/2.af61028b.chunk.js": "/task-game/static/js/2.af61028b.chunk.js",
-    "static/js/2.af61028b.chunk.js.map": "/task-game/static/js/2.af61028b.chunk.js.map",
+    "static/js/2.979ee953.chunk.js": "/task-game/static/js/2.979ee953.chunk.js",
+    "static/js/2.979ee953.chunk.js.map": "/task-game/static/js/2.979ee953.chunk.js.map",
     "index.html": "/task-game/index.html",
-    "precache-manifest.2730358ee6aef7a989d6305be58d36cb.js": "/task-game/precache-manifest.2730358ee6aef7a989d6305be58d36cb.js",
+    "precache-manifest.7ba971ba98166073c77ebf930b52eee0.js": "/task-game/precache-manifest.7ba971ba98166073c77ebf930b52eee0.js",
     "service-worker.js": "/task-game/service-worker.js",
     "static/css/main.9c6863c1.chunk.css.map": "/task-game/static/css/main.9c6863c1.chunk.css.map",
-    "static/js/2.af61028b.chunk.js.LICENSE.txt": "/task-game/static/js/2.af61028b.chunk.js.LICENSE.txt"
+    "static/js/2.979ee953.chunk.js.LICENSE.txt": "/task-game/static/js/2.979ee953.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.47697e28.js",
-    "static/js/2.af61028b.chunk.js",
+    "static/js/2.979ee953.chunk.js",
     "static/css/main.9c6863c1.chunk.css",
-    "static/js/main.ea9e6701.chunk.js"
+    "static/js/main.5ac85767.chunk.js"
   ]
 }
